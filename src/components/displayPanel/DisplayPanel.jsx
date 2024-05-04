@@ -6,6 +6,7 @@ import TokenApproval from "../stakeToken/tokenApproval";
 import StakeToken from "../stakeToken/stakeToken";
 import Stake from "../stake/Stake";
 import Approval from "../stake/Approval";
+import Withdraw from "../withdraw/Withdraw";
 
 const DisplayPanel = () => {
   return (
@@ -25,14 +26,18 @@ const DisplayPanel = () => {
         <EarnedReward />
       </div>
 
-      <div className="flex justify-around">
+      <div className="flex justify-around mt-20">
         <TokenApproval />
         <StakeToken />
       </div>
 
-      <div>
+      <div className="flex justify-around mt-10">
         <Stake />
         <Approval />
+      </div>
+
+      <div className="">
+        <Withdraw />
       </div>
     </div>
   );
