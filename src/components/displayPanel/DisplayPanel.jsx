@@ -7,6 +7,7 @@ import StakeToken from "../stakeToken/stakeToken";
 import Stake from "../stake/Stake";
 import Approval from "../stake/Approval";
 import Withdraw from "../withdraw/Withdraw";
+import Footer from "../footer/Footer";
 
 const DisplayPanel = () => {
   return (
@@ -38,6 +39,10 @@ const DisplayPanel = () => {
 
       <div className="">
         <Withdraw />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );
